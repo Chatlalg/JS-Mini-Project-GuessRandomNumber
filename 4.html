@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>JS Practice</title>
+</head>
+<body class="p-4 bg-[#212121] text-white flex flex-col items-center h-screen w-full">
+    <h1 class="text-5xl font-bold text-center">Number guessing game</h1>
+    <p class="pt-2 ">Try and guess a random number between 1 and 100.</p>
+    <p class="pb-28 ">You have 10 attempts to guess the right number.</p>
+    
+    <form class="flex flex-col gap-1 items-center">
+        <h1 class="text-3xl font-bold">Guess the number</h1>
+        <input class="w-56 p-1 rounded-md text-black " type="text" id="answer" >
+        <p id="serverResponse"></p>
+        <button class="border px-4 rounded-md w-fit" >Submit</button>
+        <p>You have <span id="guessCount">10</span> guesses remaining</p>
+        <p>Previous Guesses : [ <span id="prevGuess"></span> ]</p>
+        <h1 class="text-3xl font-bold " id="result"></h1>
+    </form>
+    <script src="./4.js"></script>
+</body>
+</html>
